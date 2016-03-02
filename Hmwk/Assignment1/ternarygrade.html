@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ternary Grade Machine</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var score = prompt("Input your score and a grade will be returned.");
+            
+            score < 0 ? (alert("Score cannot be less than 0.")) :
+                    (score < 60 ? (alert("Grade is F")) : 
+                    (score < 70 ? (alert("Grade is D")) :
+                    (score < 80 ? (alert("Grade is C")) :
+                    (score < 90 ? (alert("Grade is B")) :
+                    (score <= 100 ? (alert("Grade is A")) :
+                    (alert("Score cannot be greater than 100.")))))));
+        </script>
+        <div></div>
+    </body>
+</html>
