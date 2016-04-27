@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="CSE HTML Validator (https://www.htmlvalidator.com/)">
+        <script type="text/javascript" src="./Assignment5.js"></script>
+</head>
+
+<body>
+   <script type="text/javascript">
+     //Take the URL in the Window
+     var url=window.location.href;
+     //Split the URL and the important information is in the 2nd half
+     var info=url.split("?");
+     //Place name value pairs into an array
+     var nameValuePairs=info[1].split("&");
+     object=new Object();
+     for(var i=0;i<nameValuePairs.length;i++)
+     {
+         var map=nameValuePairs[i].toString().split("=");
+         var name =map[0];
+         var value=map[1];
+         object[name] = value;
+     }
+   
+	display( object['payRate'] );
+		
+    </script>
+
+</body>
+</html>
