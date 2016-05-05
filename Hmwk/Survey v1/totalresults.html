@@ -12,7 +12,7 @@
 <body style="background-image:url(flag.jpg)">
 <div style="height:20px;"></div>
 <div style="border:10px; width:1100px; height:170px; background-color:gray; margin:0px auto; padding:5px 0;">
-<div style="border:10px; width:1090px; height:160px; background-color:white; margin:0px auto; padding:5px 0;">
+<div style="border:10px; width:1090px; height:160px; background-color:white; background-image:url(paper.png); margin:0px auto; padding:5px 0;">
 <h1 style="margin:0 auto; padding:25px 0; width:auto; font:6em cabin;
  text-align:center;">The Federal Budget 2016</h1>
 </div>
@@ -35,9 +35,7 @@
 
 if(!localStorage.results)
 {
-	var init = [0,0,0,0,0,0];
-	var input2 = JSON.stringify(init);
-	localStorage.setItem("results", input2);
+	var result = [0,0,0,0,0,0];
 }
 else
 {
@@ -74,7 +72,7 @@ var str = JSON.stringify(result);
 localStorage.results = str;
 
 </script>
-<div style="height:90px;"></div>
+<div style="height:30px;"></div>
 <div style="border:10px; width:610px; height:505px; background-color:gray; margin:0px auto; padding: 5px 0 0 0;">
 <div style="border:10px; width:600px; height:500px; background-color:white; margin:0px auto;">
 <div style="width:300px; height:500px; float:left;">
