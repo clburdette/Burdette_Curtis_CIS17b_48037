@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>  
+  	<head>  
+    		<script type="text/javascript">  
+      			var exp = /^[A-Z][a-z]{1,15}\s[A-Z][a-z]{1,15}$/;  
+      			function checkName(nameInput)
+			{  
+        			var verified = exp.exec(nameInput.value);  
+       				if (!verified)
+				{  
+          				window.alert("Invalid Input. Please try again.");
+				}  
+        			else
+				{
+          				window.alert("Your name is " + verified);
+				}	  
+      			}  
+    		</script>  
+  	</head>  
+  	<body>  
+    		<p>Please enter your first and last names.</p>
+		<p style="color:gray"><i>exp: John Wayne</i></p>
+    		<form action="#">  
+      		<input id="name">
+		<button onclick="checkName(document.getElementById('name'));">submit</button>
+    		</form>  
+  	</body>  
+</html>
