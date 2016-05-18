@@ -31,6 +31,7 @@
 				var a1 = document.getElementById("a1");
 				var a2 = document.getElementById("a2");
 				var a3 = document.getElementById("a3");
+				document.getElementById("emailline").innerHTML = "Survey results sent to: " + semail[0] + "@" + semail[1];
 				other();
 			}
 			var url=window.location.href;
@@ -93,6 +94,8 @@
 			var result5 = result[5];
 			var sname = object.flname;
 			var bname=sname.split("+");
+			var email = object.emaili;
+			var semail=email.split("%40");
 			
 
 			var str = JSON.stringify(result);
@@ -150,5 +153,7 @@
 		<div style="text-align:center; font-size:2em; padding:25px 0 0 0;">
 			<button id="button" onclick="other()"></button>
 		</div>
+		<div style="height:100px"></div>
+		<span id="emailline" style="text-align:center"></span>
 	</body>
 </html>
