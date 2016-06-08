@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>  
+    <head>  
+        <title>Atomic-Tac-Toe</title>
+	<link rel="stylesheet" type="text/css" href="ATT.css">
+        <script>
+            function addScript(filename)
+            {
+                var scriptBlock=document.createElement('script')
+                scriptBlock.setAttribute("type","text/javascript")
+                scriptBlock.setAttribute("src", filename)
+                document.getElementsByTagName("head")[0].appendChild(scriptBlock)
+            }
+        </script>
+    </head>  
+    <body onload="addScript('tictactoe.js')">  
+        <div id="name">Atomic-Tac-Toe</div>
+        <div id="boardOuter">
+	<div id="boardLeft">
+	<div id="p1sHead">Player 1</div><div id="playerOneScore"></div><div id="p2sHead">Player 2</div><div id="playerTwoScore"></div><div id="drawHead">Draw</div><div id="draw"></div>
+	</div>
+	<div id="boardInner">	
+            <table id="board">
+                <tr>
+                    <td><button id="0" class="N" onclick="processMove(0);"></button></td>
+                    <td><button id="1" class="N" onclick="processMove(1);"></button></td>
+                    <td><button id="2" class="N" onclick="processMove(2);"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="3" class="N" onclick="processMove(3);"></button></td>
+                    <td><button id="4" class="N" onclick="processMove(4);"></button></td>
+                    <td><button id="5" class="N" onclick="processMove(5);"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="6" class="N" onclick="processMove(6);"></button></td>
+                    <td><button id="7" class="N" onclick="processMove(7);"></button></td>
+                    <td><button id="8" class="N" onclick="processMove(8);"></button></td>
+                </tr>
+            </table>
+	</div>
+	<div id="boardRight">
+	<div id="diffHead">Difficulty</div>
+	<div id="diff">
+	<div><button id="difficulty1" onclick="setDifficulty(1);">Easy</button></div>
+	<div><button id="difficulty2" onclick="setDifficulty(2);">Average</button></div>
+	<div><button id="difficulty3" onclick="setDifficulty(3);">Difficult</button></div>
+	<div><button id="difficulty4" onclick="setDifficulty(4);">Unbeatable</button></div>
+	</div>
+	<div id="setHead"># Players</div>
+	<div id="set">
+	<div><button id="setP1" onclick="setPlayers(1);">One Player Game</button></div>
+	<div><button id="setP2" onclick="setPlayers(2);">Two Player Game</button></div>
+	</div>
+	<div id="startHead">1st Move</div>
+        <div id="start">
+	<div><button id="p1s" onclick="playerStart(1);">Player One Start</button></div>
+	<div><button id="p2s" onclick="playerStart(2);">Player Two Start</button></div>
+	</div>
+	</div>
+        </div>
+        <div id="re"><span><button id="restart" onclick="restartGame();">click to start</button></span></div>
+	<div id="test2"></div>
+	<audio id="bomber" src="bomber.mp3"></audio>
+	<audio id="submarine" src="submarine.mp3"></audio>
+	<audio id="explosion" src="explosion.mp3"></audio>
+    </body>  
+</html>

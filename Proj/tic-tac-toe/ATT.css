@@ -1,0 +1,291 @@
+body{
+	background: url(atom.png);
+	background-size: 1200px 1200px;
+	background-position: center;
+    	background-repeat: no-repeat;
+}
+button.N{
+	background-color:#5FFF4F;
+	height:195px;
+        width:195px;
+	border-radius: 25px;
+}
+button.X{
+        background: url(bomber-2-512.png);
+	background-size: 195px 195px;
+    	background-repeat: no-repeat;
+	background-color:red;
+        height:195px;
+        width:195px;
+	border-radius: 25px;
+}
+button.O{
+        background: url(submarine-512.png);
+	background-size: 195px 195px;
+    	background-repeat: no-repeat;
+	background-color:blue;
+        height:195px;
+        width:195px;
+	border-radius: 25px;
+}
+button.D{
+        background: url(giphy1.gif);
+	background-size: 195px 195px;
+    	background-repeat: no-repeat;
+        height:195px;
+        width:195px;
+	border-radius: 25px;
+}
+div#name{
+	text-align:center;
+	height:200px;
+	font-size:9.5em;
+	color: white;
+	text-shadow: 2px 2px 0 #000000;
+}
+div#boardOuter{
+	text-align:center;
+	width:1024px;
+	height:630px;
+	margin:auto;
+}
+div#boardLeft{
+	text-align:center;
+	height:620px;
+	width:198px;
+	float:left;
+	margin: 0px 2px 5px 0px;
+}
+div#p1sHead{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:60px;
+	width:197px;
+	font-size:3em;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#F5F6F7;
+	border-radius: 25px;
+}
+div#playerOneScore{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:140px;
+	width:197px;
+	font-size:8em;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#E5E4E2;
+	border-radius: 25px;
+	color: red;
+	margin: 2px 0 0 0;
+}
+div#p2sHead{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:60px;
+	width:197px;
+	font-size:3em;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#F5F6F7;
+	border-radius: 25px;
+	margin: 2px 0 0 0;
+}
+div#playerTwoScore{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:140px;
+	width:197px;
+	font-size:8em;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#E5E4E2;
+	border-radius: 25px;
+	color: blue;
+	margin: 2px 0 0 0;
+}
+div#drawHead{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:60px;
+	width:197px;
+	font-size:3em;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#F5F6F7;
+	border-radius: 25px;
+	margin: 2px 0 0 0;
+}
+div#draw{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:140px;
+	width:197px;
+	font-size:8em;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#E5E4E2;
+	border-radius: 25px;
+	margin: 2px 0 0 0;
+}	
+div#boardInner{
+	padding: 0px 0 0 0;
+	margin: auto;
+	text-align:center;
+	width:620px;
+	height:620px;
+	border-style: solid;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#E5E4E2;
+	border-radius: 25px;
+	float:left;
+}
+div#boardRight{
+	text-align:center;
+	height:620px;
+	width:198px;
+	margin: auto;
+	float:left;
+	margin: 0px 0px 5px 2px;
+}
+div#re{
+	text-align:center;
+}
+div#diffHead{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:60px;
+	width:197px;
+	font-size:3em;
+	border-color:gray;
+    	border-width: 1px;
+	background-color:#F5F6F7;
+	border-radius: 25px;
+}
+div#diff{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:140px;
+	width:197px;
+	border-color:gray;
+	background-color:#E5E4E2;
+	border-radius: 2px;
+	margin: 2px 0 0 0;
+}
+div#setHead{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:60px;
+	width:197px;
+	font-size:3em;
+	border-color:gray;
+	background-color:#F5F6F7;
+	border-radius: 25px;
+	margin: 2px 0 0 0;
+}
+div#set{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:140px;
+	width:197px;
+	border-color:gray;
+	background-color:#E5E4E2;
+	border-radius: 2px;
+	margin: 2px 0 0 0;
+}
+div#startHead{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:60px;
+	width:197px;
+	font-size:3em;
+	border-color:gray;
+	background-color:#F5F6F7;
+	border-radius: 25px;
+	margin: 2px 0 0 0;
+}
+div#start{
+	text-align:center;
+	border-style: solid;
+    	border-width: 1px;
+	height:140px;
+	width:197px;
+	border-color:gray;
+	background-color:#E5E4E2;
+	border-radius: 2px;
+	margin: 2px 0 0 0;
+}
+table#board{
+	background-color:#B6B6B4;
+	margin: 9px auto;
+	border-radius: 25px;
+}
+button#restart{
+	width:200px;
+	height:50px;
+	font-size:2em;
+}
+button#difficulty1{
+	text-align:center;
+	width:195px;
+	height:34px;
+	font-size:1.5em;
+	margin: 2px 0 0 0;
+}
+button#difficulty2{
+	text-align:center;
+	width:195px;
+	height:34px;
+	font-size:1.5em;
+}
+button#difficulty3{
+	text-align:center;
+	width:195px;
+	height:34px;
+	font-size:1.5em;
+}
+button#difficulty4{
+	text-align:center;
+	width:195px;
+	height:34px;
+	font-size:1.5em;
+}
+button#setP1{
+	text-align:center;
+	width:195px;
+	height:68px;
+	font-size:1.5em;
+	margin: 2px 0 0 0;
+}
+button#setP2{
+	text-align:center;
+	width:195px;
+	height:68px;
+	font-size:1.5em;
+}
+button#p1s{
+	text-align:center;
+	width:195px;
+	height:68px;
+	font-size:1.5em;
+	margin: 2px 0 0 0;
+}
+button#p2s{
+	text-align:center;
+	width:195px;
+	height:68px;
+	font-size:1.5em;
+}

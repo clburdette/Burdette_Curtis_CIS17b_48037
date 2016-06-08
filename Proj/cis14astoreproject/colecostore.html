@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Display the User Table</title>
+        <meta charset="UTF-8">
+        <meta title="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#sep{
+    			border-bottom: solid;
+		}
+		#logo{
+    			position:fixed;
+			top:0;
+		}
+		#rcorners1 {
+    			border-radius: 25px;
+    			background: #F3F3F3;
+    			height: 82px; 
+		}
+		tr{
+			height:50px;
+		}
+		#shoppingCart {
+			border-radius: 40px;
+			height: 80px;
+			width: 80px;
+			background: url(cart.jpg)no-repeat;
+			background-size: 82px 85px;
+		}
+		#addCartItem {
+			border: 1px solid gray;
+			border-collapse: collapse;
+			width: 1000px;
+			height: 100px;
+		}
+		#showCart {
+			border-collapse: collapse;
+			width: 1000px;
+		}
+		#showCartC {
+			border-collapse: collapse;
+			width: 394px;
+			font-size: 1em;
+			font-weight: bold;
+		}
+		#showCartR {
+			border-bottom: 1px solid #ddd;
+		}
+		
+	</style>
+	<script type="text/javascript" src="jsonLocalStorage.js"></script>
+	<script type="text/javascript" src="users.js"></script>
+	<script type="text/javascript" src="actions.js"></script>
+    </head>
+    <body style="overflow-y:scroll">
+        <div id="logo" style="background:white; height:208px; width:100%">
+		<div style="background-image:url(rainbowtile.jpg); height:120px; width:100%">
+			<div style="width:1024; margin:0 auto;">
+				<div id="splashTitle" style="font-size:3.4em; font-family:georgia; width:765px; float:left; padding:33px 0 0 0;">YOUR VISION IS OUR VISION</div>
+				<div style="font-size:1em; font-family:georgia; width:3px; float:left; padding:67px 0 0 0;">&copy;</div>
+				<div style="float:right;"><img src="colecovision-logo.png" height="200px" width="200px" /></div>
+			</div>
+		</div>
+		<div id="sep" style="height:84px; width:1024px; margin:auto;">
+			<div id="rcorners1" class="notSignedIn" style="width:748px; float:left; padding: 2px 0 0 5;">
+				<div style="float:left;">
+					<button id="shoppingCart" onclick="shoppingCart();"></button>
+				</div>
+				<div id="signInBar" style="float:left; padding: 30px 0 0 10;">&nbsp;&nbsp;&nbsp;user name:&nbsp;
+					<input type="text" id="logInName" name="username" style="width:150px">&nbsp;&nbsp;&nbsp;password:&nbsp;
+					<input type="text" id="logInPassword" name="password" style="width:150px">&nbsp;&nbsp;&nbsp;
+					<button id="logInSignIn" onclick="signIn();">sign in</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="logInSignUp" onclick="signUp();">sign up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="background:white; height:206px; width:100%"></div>
+	<div id="main" style="width:1022px; margin:0 auto; overflow-y:hidden; padding:0px 0 0 16px;"></div>
+        <script type="text/javascript">
+	setLocalStor();
+	blah("title");
+        </script>
+    </body>
+</html>
