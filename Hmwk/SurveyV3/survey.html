@@ -4,9 +4,11 @@
 	<title>Federal Budget Survey</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="generator" content="CSE HTML Validator (https://www.htmlvalidator.com/)">
-<script type="text/javascript">   
+<script type="text/javascript">
+        //set regular expression variables
 	var exp = /^[A-Z][a-z]{1,15}\s[A-Z][a-z]{1,15}$/;
 	var emailcheck = /^[A-Za-z0-9._%+-]{1,20}[@][A-Za-z0-9.-]{1,20}[.][A-Za-z]{2,3}$/;
+        //verifies name and email. notifies if vaildation fails
 	function checkName(nameInput, emailInput)
 	{  
 		var verified = exp.exec(nameInput.value);

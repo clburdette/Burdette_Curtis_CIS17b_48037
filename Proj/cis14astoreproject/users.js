@@ -111,7 +111,7 @@ var customers = [
 	{	
 		firstname:"Curt",
 		lastname:"Burdette",
-		email:"johnwayne@riobravo.com"
+		email:"johnwayne@riobravo.com",
 		username:"colecofan",
 		password:"password"
 	}

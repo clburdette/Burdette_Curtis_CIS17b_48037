@@ -1,8 +1,10 @@
 function other()
 {	
+        //set variables for displaying information through HTML
+        //toggles between respondents info and all stored info
 	if (screen1)
 	{
-		title.innerHTML = bname[0] + " " + bname[1] +"'s answers";
+                title.innerHTML = bname[0] + " " + bname[1] +"'s answers";
 		button.innerHTML = "View All Answers";
 		if (object.answer1 == 1)
 		{
